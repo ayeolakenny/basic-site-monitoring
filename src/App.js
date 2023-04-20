@@ -11,7 +11,7 @@ function App() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    fetch("https://nodejs-mailer002.herokuapp.com/mail/create-site", {
+    fetch("https://nodejs-mailer003.herokuapp.com/mail/create-site", {
       method: "POST",
       headers: myHeaders,
       body: JSON.stringify({
@@ -28,7 +28,7 @@ function App() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    fetch(`https://nodejs-mailer002.herokuapp.com/mail/site/update/${siteId}`, {
+    fetch(`https://nodejs-mailer003.herokuapp.com/mail/site/update/${siteId}`, {
       method: "POST",
       headers: myHeaders,
       body: JSON.stringify({
@@ -44,7 +44,7 @@ function App() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    fetch(`https://nodejs-mailer002.herokuapp.com/mail/site/${siteId}`, {
+    fetch(`https://nodejs-mailer003.herokuapp.com/mail/site/${siteId}`, {
       method: "POST",
       headers: myHeaders,
     })
@@ -54,7 +54,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("https://nodejs-mailer002.herokuapp.com/mail/site", {
+    fetch("https://nodejs-mailer003.herokuapp.com/mail/site", {
       method: "GET",
     })
       .then((response) => response.json())
